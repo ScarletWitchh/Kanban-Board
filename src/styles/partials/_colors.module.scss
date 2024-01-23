@@ -1,0 +1,36 @@
+// 400 is the primary shade for a color
+// The lower the number the lighter the shade
+$white: #fff;
+
+
+$grey-color: (
+  grey-100: #f7f7f9,
+  grey-200: #f3f3f3,
+  grey-300: #e0e0e0,
+  grey-400: #ededed,
+  grey-500: #9fa6b0,
+  grey-550: #6b7785,
+  grey-600: #757575,
+  grey-700: #424242,
+  grey-800: #42424299,
+  grey-900: #101721,
+);
+
+@each $color, $value in $grey-color {
+  :export {
+    #{unquote($color)}: $value;
+  }
+}
+$light-color: (
+  light-50: #f5f7f9,
+  light-100: #fafaff,
+  light-200: #dde6f3,
+  light-300: #dde5f0,
+  light-400: #eff1f5,
+);
+
+@each $color, $value in $light-color {
+  :export {
+    #{unquote($color)}: $value;
+  }
+}

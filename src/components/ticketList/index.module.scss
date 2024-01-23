@@ -1,0 +1,30 @@
+@use "../../styles/partials/" as *;
+
+.ticketListContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: map-get($map: $scale, $key: 8);
+    padding: 8px;
+
+    .ticketListHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: map-get($map: $scale, $key: 8);
+        padding: 0 map-get($map: $scale, $key: 4);
+        :local(.heading) {
+            @extend .hero-text;
+            display: flex;
+            align-items: center;
+            gap: map-get($map: $scale, $key: 8);
+            :local(.count) {
+                @extend .sub-hero-text-regular-medium;
+            }
+        }
+        .options {
+            display: flex;
+            gap: map-get($map: $scale, $key: 8);
+        }
+    }
+}
