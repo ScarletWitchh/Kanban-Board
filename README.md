@@ -1,4 +1,4 @@
-# Getting Started with QuickSell Assignment
+# Getting Started with the project
 Clone this repository with git clone
 
 # Setup
